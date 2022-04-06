@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>A Basic HTML5 Template</title>
+   
+  </head>
+
+  <body>
+   <nav>
+    <a href="/">Home</a>
+    <a href="/about-us">About us</a>
+    <a href="/contact-us">Contact us</a>
+    <main>
+        <iframe 
+        src="https://mitid.eu.pythonanywhere.com/" 
+        frameborder="0"
+        style="height: 18rem">
+    </iframe>
+    </main>
+
+    <script>
+      /*
+        async functionlogin(){
+          let form =document.querySelector("form")
+          let conn = await fetch("/api-login", {
+            method: POST,
+            body: new FormData(form)
+          })
+          let res = wait conn.text()
+          if(res == "NO"){parent.postMessage("NO", "*"), return}
+          // success
+          parent.postMessage("yes","*")
+        }
+
+
+      windows.addEventListener("message",event =>{
+        console.log(event.data)
+      } , false)
+
+      */
+
+
+       /*
+        JWT
+        CPR
+        {
+            "cpr":"1",
+            "iat":1000, //issue at
+            "exp":1600
+        }
+        */
+
+        window.addEventListener("message", event => {
+            if(event.data == "no")
+                return
+
+            let jwt = { "cpr": "12345","iat": 1646214638,"exp": 1646215238}
+            //Validate the JWT in the server
+          console.log(event.data)
+        }, false)
+    </script>
+  
+
+   </nav>
+  </body>
+</html>

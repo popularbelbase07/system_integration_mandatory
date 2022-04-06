@@ -1,0 +1,6 @@
+id	name	price	note
+1	A	10	This is A, yet is not a number
+2	b	20	This is b
+
+
+print (message)
