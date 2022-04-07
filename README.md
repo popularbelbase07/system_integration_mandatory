@@ -62,6 +62,6 @@ The HTTP request returns a Response Object with all the response data (content, 
 
             pip install faker
 
-* Two_Factor_authentication( Inatall random)
+* Two_Factor_authentication( Install random)
 
             pip install random2
