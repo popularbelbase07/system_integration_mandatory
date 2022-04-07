@@ -43,4 +43,25 @@ This is a mandatory application for system integration top up bachelor in softwa
 
             "https://fatsms.com/send-sms" 
 
-* 
+* The requests module allows you to send HTTP requests using Python.
+The HTTP request returns a Response Object with all the response data (content, encoding, status, etc).
+
+            pip install requests
+            pip install --upgrade requests
+
+* pydantic allows custom data types to be defined or you can extend validation with methods on a model decorated with the validator decorator. dataclasses integration. As well as BaseModel , pydantic provides a dataclass decorator which creates (almost) vanilla python dataclasses with input data parsing and validation.
+
+            pip install pydantic
+
+* Redis has a client-server architecture and uses a request-response model. This means that you (the client) connect to a Redis server through TCP connection, on port 6379 by default. You request some action (like some form of reading, writing, getting, setting, or updating), and the server serves you back a response.
+
+            pip install redis
+            python -m pip install radis --upgrade
+
+* Faker for generating fake data using sqlite3
+
+            pip install faker
+
+* Two_Factor_authentication( Inatall random)
+
+            pip install random2
